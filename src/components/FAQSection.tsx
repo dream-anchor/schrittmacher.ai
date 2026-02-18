@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    q: 'Was kostet ein KI-Workshop?',
-    a: 'Jedes Projekt ist anders – Teamgröße, Ort, Inhalte, Dauer. Im kostenlosen Erstgespräch klären wir in 30 Minuten, was für Sie sinnvoll ist und was es kostet. Keine versteckten Kosten, keine Überraschungen.',
+    q: 'Was kostet eine Website?',
+    a: 'Jedes Projekt ist anders – Umfang, Funktionen, CMS-Anforderungen. Im kostenlosen Erstgespräch klären wir in 30 Minuten, was sinnvoll ist und was es kostet. Keine versteckten Kosten, keine Überraschungen.',
   },
   {
-    q: 'Was ist Vibe Coding?',
-    a: 'Software bauen in natürlicher Sprache statt in reinem Code. Statt monatelanger Entwicklung liefern wir in Tagen funktionsfähige Prototypen.',
+    q: 'Was genau baut ihr?',
+    a: 'Websites, Web-Apps, interne Tools, Automationen. Alles was im Browser läuft. Auf modernem Stack: React, TypeScript, Supabase, Cloudflare. Maßgeschneidert, kein Template von der Stange.',
+  },
+  {
+    q: 'Was ist der Unterschied zu einer klassischen Agentur?',
+    a: 'Geschwindigkeit und Direktheit. Keine Projektmanager, keine Zwischenebenen. Sie reden direkt mit dem, der baut. Und weil wir KI als Werkzeug nutzen, sind wir 10-50 Mal schneller als ein klassisches Entwicklerteam.',
+  },
+  {
+    q: 'Was lernt man im Workshop?',
+    a: 'Hängt davon ab was Sie brauchen. "Meine Website, meine Regeln" – Sie lernen Ihre Website selbst zu pflegen, ohne Code. "Vom Briefing zum Prototyp" – Sie bauen an einem Tag eine funktionierende App. "KI für mein Team" – Ihr Team spart ab morgen eine Stunde pro Tag.',
   },
   {
     q: 'Brauche ich technisches Vorwissen?',
-    a: 'Nein. Null. Nada. Antoine hat jahrelang Technik im Fernsehen für 82 Millionen Zuschauer erklärt – Ihr Team schafft er auch.',
-  },
-  {
-    q: 'Was unterscheidet euch von anderen KI-Beratungen?',
-    a: 'Antoine ist Programmierer UND professioneller Entertainer. Unsere Workshops sind nicht trocken. Unsere Keynotes nicht langweilig. Und unsere Lösungen nicht theoretisch.',
+    a: 'Nein. Antoine hat 82 Millionen TV-Zuschauern Technik erklärt. Ihr Team schafft er auch.',
   },
   {
     q: 'Nur in München?',
-    a: 'Workshops und Keynotes: deutschlandweit. Vibe-Coding-Projekte laufen oft remote.',
-  },
-  {
-    q: 'Wie schnell liefert ihr Ergebnisse?',
-    a: 'Workshop: am selben Tag. Prototyp: 1–2 Wochen.',
+    a: 'Webentwicklung läuft komplett remote. Workshops und Keynotes: deutschlandweit. Für Keynotes auch international.',
   },
 ];
 

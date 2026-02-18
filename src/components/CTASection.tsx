@@ -12,8 +12,8 @@ const CTASection = () => {
           Bereit?
         </h2>
         <p className="text-lg md:text-xl text-foreground/75 max-w-xl mx-auto mb-10 leading-relaxed reveal">
-          30 Minuten. Kostenlos. Danach wissen Sie, ob KI für Ihr
-          Unternehmen Sinn macht – und was der nächste Schritt wäre.
+          30 Minuten. Kostenlos. Danach wissen Sie,
+          was möglich ist – und was der nächste Schritt wäre.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 reveal">
@@ -21,10 +21,10 @@ const CTASection = () => {
             href="mailto:hallo@schrittmacher.ai"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3.5 rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
-            Erstgespräch buchen <span aria-hidden="true">→</span>
+            Projekt anfragen <span aria-hidden="true">→</span>
           </a>
           <a
-            href="tel:+4989909015394​3"
+            href="tel:+4989909015393"
             className="inline-flex items-center gap-2 border border-border text-foreground/80 px-7 py-3.5 rounded-lg font-medium hover:bg-secondary/50 transition-colors"
           >
             Oder direkt anrufen <span aria-hidden="true">→</span>

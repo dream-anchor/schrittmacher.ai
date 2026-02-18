@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const chips = [
-  'E-Mails automatisch beantworten',
+  'Website selbst pflegen',
   'Angebote schneller erstellen',
-  'Dokumente zusammenfassen',
+  'Interne Tools bauen',
   'Social Media Content',
-  'Daten analysieren',
+  'Dokumente automatisieren',
 ];
 
 const KIWerkbank = () => {
@@ -38,8 +38,8 @@ const KIWerkbank = () => {
       setSavings(0);
       return;
     }
-    const targetH = 4;
-    const targetS = 3200;
+    const targetH = 5;
+    const targetS = 1200;
     const steps = 40;
     let step = 0;
     const interval = setInterval(() => {
@@ -86,7 +86,7 @@ const KIWerkbank = () => {
               onChange={(e) => { setInput(e.target.value); setShowResult(false); }}
               onFocus={() => setFocused(true)}
               onBlur={() => setFocused(false)}
-              placeholder={'Was kostet Sie gerade am meisten Zeit? Zum Beispiel:\n"Wir beantworten täglich 200 Kundenanfragen per Mail –\nimmer die gleichen 30 Fragen."'}
+              placeholder={'Was kostet Sie gerade am meisten Zeit? Zum Beispiel:\n"Unsere Website-Agentur braucht 2 Wochen für jede Textänderung."'}
               className="w-full bg-secondary/70 border border-border rounded-lg p-4 text-sm text-foreground placeholder:text-foreground/40 resize-none focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow min-h-[100px]"
             />
 
@@ -131,20 +131,21 @@ const KIWerkbank = () => {
             <div className="border-t border-border p-6 space-y-4 animate-in fade-in-0 slide-in-from-bottom-2 duration-500">
               <div className="bg-secondary/50 rounded-lg p-5 border border-border">
                 <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Lösung</p>
-                <p className="font-medium text-foreground/95 mb-1">KI-gestütztes E-Mail-Triage-System</p>
+                <p className="font-medium text-foreground/95 mb-1">KI-gestütztes Website-Management</p>
                 <p className="text-sm text-foreground/70">
-                  Ein System das eingehende Mails automatisch kategorisiert,
-                  Standardanfragen beantwortet und nur Sonderfälle an Ihr Team weiterleitet.
+                  Ein System bei dem Sie Texte, Bilder und Inhalte Ihrer Website
+                  selbst ändern können – per natürlicher Sprache, ohne Code,
+                  ohne Ihre Agentur anrufen zu müssen.
                 </p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-5 border border-border">
                 <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Quick Win</p>
-                <p className="text-sm text-foreground/70">Timeline: <span className="text-foreground/95 font-medium">1–2 Wochen</span></p>
-                <p className="text-sm text-foreground/70">Empfohlener Service: <span className="text-foreground/95 font-medium">Vibe Coding</span></p>
+                <p className="text-sm text-foreground/70">Timeline: <span className="text-foreground/95 font-medium">Workshop: 1 Tag · Umsetzung: 1–2 Wochen</span></p>
+                <p className="text-sm text-foreground/70">Empfohlener Einstieg: <span className="text-foreground/95 font-medium">Tagesworkshop</span></p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-5 border border-border grid grid-cols-2 gap-6">
                 <div>
-                  <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-1">Gespart pro Tag</p>
+                  <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-1">Gespart pro Woche</p>
                   <p className="font-serif-display text-3xl text-foreground/95">~{hours} Stunden</p>
                 </div>
                 <div>
@@ -156,7 +157,7 @@ const KIWerkbank = () => {
                 href="mailto:hallo@schrittmacher.ai"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors w-full justify-center"
               >
-                Erstgespräch buchen →
+                Projekt anfragen →
               </a>
             </div>
           )}
