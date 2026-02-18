@@ -4,21 +4,21 @@ const cards = [
     afterLabel: 'Nach einem Tag',
     afterHeadline: 'Jeder im Team hat 3 KI-Tools im Alltag.',
     afterText: 'Kein theoretisches Gelaber. Am Abend gehen alle nach Hause und machen Dinge, die sie morgens noch nicht konnten.',
-    tag: 'Workshop · ab 2.500 €',
+    tag: 'KI-Kickstart · ab 3.500 € / Halbtag',
   },
   {
     before: 'Ihre Konferenz braucht einen KI-Speaker. Aber bitte keinen, bei dem nach 10 Minuten alle aufs Handy schauen.',
     afterLabel: 'Nach einer Keynote',
     afterHeadline: 'Ein Publikum, das nicht nur klatscht – sondern handelt.',
     afterText: 'Technologie + Entertainment von jemandem, der beides professionell macht. Kein Zufall. Kein Risiko.',
-    tag: 'Keynote · ab 3.000 €',
+    tag: 'Keynote · ab 4.000 €',
   },
   {
     before: 'Sie brauchen ein internes Tool, eine Automation, einen Prototypen. Ihre Agentur sagt: 6 Monate, 80.000 Euro.',
     afterLabel: 'Nach 1–2 Wochen',
     afterHeadline: 'Ein funktionierender Prototyp. Echte Software.',
     afterText: 'Vibe Coding: Wir beschreiben der KI, was wir brauchen – und bauen es. Kein PowerPoint. Code, der läuft.',
-    tag: 'Vibe Coding · ab 5.000 €',
+    tag: 'Sprint MVP · ab 5.000 €',
   },
 ];
 
