@@ -14,6 +14,7 @@ const KIWerkbank = () => {
   const [showResult, setShowResult] = useState(false);
   const [hours, setHours] = useState(0);
   const [savings, setSavings] = useState(0);
+  const [focused, setFocused] = useState(false);
 
   const handleChip = (text: string) => {
     setInput(text);
@@ -55,22 +56,24 @@ const KIWerkbank = () => {
       <div className="max-w-3xl mx-auto px-6">
         {/* Intro */}
         <div className="text-center mb-12 reveal">
-          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-4">Live-Demo</p>
-          <h2 className="font-serif-display text-4xl md:text-5xl mb-4 leading-[1.1]">
+          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">Live-Demo</p>
+          <h2 className="font-serif-display text-4xl md:text-5xl mb-4 leading-[1.1] text-foreground/95">
             Beschreiben Sie ein Problem.<br />
             Wir zeigen, was KI daraus macht.
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-foreground/70">
             Keine Anmeldung. Kein Verkaufsgespräch. Einfach tippen.
           </p>
         </div>
 
         {/* Werkbank Box */}
-        <div className="reveal bg-card border border-border rounded-xl overflow-hidden">
+        <div className={`reveal bg-card border border-border rounded-xl overflow-hidden transition-shadow duration-[3000ms] ${
+          focused ? 'shadow-[0_0_30px_hsl(var(--gold)/0.12)]' : 'werkbank-pulse'
+        }`}>
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-border">
-            <span className="font-medium text-sm">KI-Werkbank</span>
-            <span className="font-mono-label text-[10px] tracking-wider flex items-center gap-2 text-muted-foreground">
+            <span className="font-medium text-sm text-foreground/95">KI-Werkbank</span>
+            <span className="font-mono-label text-[10px] tracking-wider flex items-center gap-2 text-foreground/35">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
               CLAUDE AI
             </span>
@@ -81,10 +84,10 @@ const KIWerkbank = () => {
             <textarea
               value={input}
               onChange={(e) => { setInput(e.target.value); setShowResult(false); }}
+              onFocus={() => setFocused(true)}
+              onBlur={() => setFocused(false)}
               placeholder={'Was kostet Sie gerade am meisten Zeit? Zum Beispiel:\n"Wir beantworten täglich 200 Kundenanfragen per Mail –\nimmer die gleichen 30 Fragen."'}
-              className={`w-full bg-secondary/50 border border-border rounded-lg p-4 text-sm text-foreground placeholder:text-muted-foreground/60 resize-none focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow min-h-[100px] ${
-                !input && !loading ? 'shadow-[0_0_20px_hsl(var(--gold)/0.08)]' : ''
-              }`}
+              className="w-full bg-secondary/70 border border-border rounded-lg p-4 text-sm text-foreground placeholder:text-foreground/40 resize-none focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow min-h-[100px]"
             />
 
             {/* Chips */}
@@ -93,7 +96,7 @@ const KIWerkbank = () => {
                 <button
                   key={chip}
                   onClick={() => handleChip(chip)}
-                  className="font-mono-label text-[10px] tracking-wider px-3 py-1.5 rounded-md border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors"
+                  className="font-mono-label text-[10px] tracking-wider px-3 py-1.5 rounded-md border border-border text-foreground/45 hover:text-foreground/80 hover:border-primary/40 transition-colors"
                 >
                   {chip}
                 </button>
@@ -128,25 +131,25 @@ const KIWerkbank = () => {
             <div className="border-t border-border p-6 space-y-4 animate-in fade-in-0 slide-in-from-bottom-2 duration-500">
               <div className="bg-secondary/50 rounded-lg p-5 border border-border">
                 <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Lösung</p>
-                <p className="font-medium text-foreground mb-1">KI-gestütztes E-Mail-Triage-System</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="font-medium text-foreground/95 mb-1">KI-gestütztes E-Mail-Triage-System</p>
+                <p className="text-sm text-foreground/70">
                   Ein System das eingehende Mails automatisch kategorisiert,
                   Standardanfragen beantwortet und nur Sonderfälle an Ihr Team weiterleitet.
                 </p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-5 border border-border">
                 <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Quick Win</p>
-                <p className="text-sm text-muted-foreground">Timeline: <span className="text-foreground font-medium">1–2 Wochen</span></p>
-                <p className="text-sm text-muted-foreground">Empfohlener Service: <span className="text-foreground font-medium">Vibe Coding</span></p>
+                <p className="text-sm text-foreground/70">Timeline: <span className="text-foreground/95 font-medium">1–2 Wochen</span></p>
+                <p className="text-sm text-foreground/70">Empfohlener Service: <span className="text-foreground/95 font-medium">Vibe Coding</span></p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-5 border border-border grid grid-cols-2 gap-6">
                 <div>
                   <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-1">Gespart pro Tag</p>
-                  <p className="font-serif-display text-3xl text-foreground">~{hours} Stunden</p>
+                  <p className="font-serif-display text-3xl text-foreground/95">~{hours} Stunden</p>
                 </div>
                 <div>
                   <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-1">Monatliche Ersparnis</p>
-                  <p className="font-serif-display text-3xl text-foreground">~{savings.toLocaleString('de-DE')} €</p>
+                  <p className="font-serif-display text-3xl text-foreground/95">~{savings.toLocaleString('de-DE')} €</p>
                 </div>
               </div>
               <a
@@ -160,7 +163,7 @@ const KIWerkbank = () => {
 
           {/* Footer */}
           <div className="px-6 py-3 border-t border-border">
-            <p className="font-mono-label text-[9px] tracking-wider text-muted-foreground/50 text-center">
+            <p className="font-mono-label text-[9px] tracking-wider text-foreground/25 text-center">
               Powered by Claude AI · Ihre Daten werden nicht gespeichert · DSGVO-konform
             </p>
           </div>
