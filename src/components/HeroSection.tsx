@@ -98,8 +98,8 @@ const HeroSection = () => {
               <p className="font-mono-label text-xs tracking-wider uppercase text-foreground/35 mt-1">TV-Zuschauer als Tech-Nick</p>
             </div>
             <div>
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95">Netflix</p>
-              <p className="font-mono-label text-xs tracking-wider uppercase text-foreground/35 mt-1">Drehbuchautor</p>
+              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95">100+</p>
+              <p className="font-mono-label text-xs tracking-wider uppercase text-foreground/35 mt-1">Film- & TV-Produktionen</p>
             </div>
           </div>
         </motion.div>

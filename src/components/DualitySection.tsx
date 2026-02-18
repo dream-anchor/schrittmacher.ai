@@ -32,7 +32,8 @@ const DualitySection = () => {
                 Der Entertainer.
               </h2>
               <p className="text-foreground/70 leading-relaxed">
-                4 Jahre "Tech-Nick" bei Saturn. Drehbücher für Netflix und ZDF.{' '}
+                4 Jahre "Tech-Nick" bei Saturn. Schauspieler in Absolute Giganten,
+                Das Experiment, Who Am I. Über 100 Film- und TV-Produktionen.{' '}
                 <span className="text-foreground/95 font-medium">Die seltene Fähigkeit, komplexe Dinge so zu erklären, dass
                 jeder sie versteht</span> – und am nächsten Tag umsetzt.
               </p>
