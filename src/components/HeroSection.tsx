@@ -70,7 +70,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.72, duration: 0.5 }}
-            className="inline-block"
+            className="inline-block mr-[0.25em]"
           >
             Ihren
           </motion.span>
