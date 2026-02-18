@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
@@ -14,6 +14,29 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   const containerRef = useScrollReveal();
+  const atmosphereRef = useRef<HTMLDivElement>(null);
+
+  // Scroll color temperature shift (cool → warm)
+  useEffect(() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return;
+
+    const updateAtmosphere = () => {
+      if (!atmosphereRef.current) return;
+      const scrollPct = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight), 1);
+      // Cool blue at top → warm gold at bottom
+      const coolOpacity = (1 - scrollPct) * 0.06;
+      const warmOpacity = scrollPct * 0.08;
+      atmosphereRef.current.style.background = `
+        radial-gradient(ellipse 80% 60% at 30% 20%, hsl(215 60% 50% / ${coolOpacity}), transparent),
+        radial-gradient(ellipse 80% 60% at 70% 80%, hsl(40 90% 55% / ${warmOpacity}), transparent)
+      `;
+    };
+
+    window.addEventListener('scroll', updateAtmosphere, { passive: true });
+    updateAtmosphere();
+    return () => window.removeEventListener('scroll', updateAtmosphere);
+  }, []);
 
   // Cursor glow on desktop
   useEffect(() => {
@@ -22,10 +45,10 @@ const Index = () => {
 
     const glow = document.createElement('div');
     glow.style.cssText = `
-      position: fixed; width: 300px; height: 300px; border-radius: 50%;
+      position: fixed; width: 400px; height: 400px; border-radius: 50%;
       background: radial-gradient(circle, hsl(40 90% 55% / 0.06), transparent 70%);
       pointer-events: none; z-index: 0; transform: translate(-50%, -50%);
-      transition: opacity 0.3s;
+      transition: left 0.15s ease-out, top 0.15s ease-out, opacity 0.3s;
     `;
     document.body.appendChild(glow);
 
@@ -36,7 +59,6 @@ const Index = () => {
     const hide = () => { glow.style.opacity = '0'; };
     const show = () => { glow.style.opacity = '1'; };
 
-    // Only show on non-touch devices
     if (window.matchMedia('(hover: hover)').matches) {
       window.addEventListener('mousemove', move);
       document.addEventListener('mouseleave', hide);
@@ -55,6 +77,7 @@ const Index = () => {
 
   return (
     <div ref={containerRef} className="noise-overlay">
+      <div ref={atmosphereRef} className="scroll-atmosphere" />
       <Navigation />
       <main>
         <HeroSection />

@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     q: 'Was kostet ein KI-Workshop?',
-    a: 'Der KI-Kickstart (Halbtag) startet ab 3.500 €, die ganztägige KI-Werkstatt ab 5.000 €, und die zweitägige KI-Transformation ab 9.000 €. Der genaue Preis hängt von Teamgröße, Ort und Inhalten ab. Im Erstgespräch klären wir das in 30 Minuten.',
+    a: 'Jedes Projekt ist anders – Teamgröße, Ort, Inhalte, Dauer. Im kostenlosen Erstgespräch klären wir in 30 Minuten, was für Sie sinnvoll ist und was es kostet. Keine versteckten Kosten, keine Überraschungen.',
   },
   {
     q: 'Was ist Vibe Coding?',
@@ -37,19 +37,19 @@ const FAQSection = () => {
     <section className="relative py-24 md:py-32">
       <div className="max-w-3xl mx-auto px-6">
         <div className="mb-12 reveal">
-          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-4">
+          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">
             Häufige Fragen
           </p>
-          <h2 className="font-serif-display text-4xl md:text-5xl">FAQ</h2>
+          <h2 className="font-serif-display text-4xl md:text-5xl text-foreground/95">FAQ</h2>
         </div>
 
         <Accordion type="single" collapsible className="reveal">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border-border">
-              <AccordionTrigger className="text-left text-foreground hover:no-underline py-5">
+              <AccordionTrigger className="text-left text-foreground/95 hover:no-underline py-5">
                 <span className="text-base">{faq.q}</span>
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+              <AccordionContent className="text-foreground/70 leading-relaxed pb-5">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

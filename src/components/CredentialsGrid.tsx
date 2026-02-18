@@ -2,9 +2,9 @@ const credentials = [
   { year: '1996', title: 'Erster Code geschrieben', detail: 'HTML · PHP · MySQL' },
   { year: '2003', title: 'TYPO3-Forum gegründet', detail: 'Eines der größten in Europa' },
   { year: '2013', title: '"Tech-Nick" bei Saturn', detail: '82 Mio. TV-Zuschauer' },
-  { year: '3.676', title: 'GitHub-Commits', detail: '6 Plattformen live' },
   { year: '2025', title: 'schrittmacher.ai gegründet', detail: 'Mit Stefanie Sick' },
   { year: '30+', title: 'Jahre Programmiererfahrung', detail: 'Von PHP bis KI' },
+  { year: 'Netflix', title: 'Drehbuchautor', detail: 'Film & Fernsehen' },
   { year: '∞', title: 'Kaffee getrunken', detail: 'Minimum 4 pro Tag' },
   { year: '1', title: 'Mission', detail: 'Technick verbindet' },
 ];
@@ -17,19 +17,17 @@ const CredentialsGrid = () => {
           {credentials.map((item, i) => (
             <div
               key={i}
-              className={`p-6 md:p-8 ${
+              className={`p-6 md:p-8 hover:bg-secondary/30 transition-colors duration-300 ${
                 i < credentials.length - (credentials.length % 4 || 4) ? 'border-b' : ''
               } ${
                 (i + 1) % 4 !== 0 ? 'lg:border-r' : ''
               } ${
                 i % 2 === 0 ? 'sm:border-r lg:border-r-0' : ''
-              } ${
-                (i + 1) % 4 !== 0 ? '' : ''
               } border-border`}
             >
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground mb-2">{item.year}</p>
-              <p className="text-sm text-foreground/80 mb-1">{item.title}</p>
-              <p className="font-mono-label text-[9px] tracking-[0.2em] uppercase text-muted-foreground">
+              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95 mb-2">{item.year}</p>
+              <p className="text-sm text-foreground/70 mb-1">{item.title}</p>
+              <p className="font-mono-label text-[9px] tracking-[0.2em] uppercase text-foreground/35">
                 {item.detail}
               </p>
             </div>

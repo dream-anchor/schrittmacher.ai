@@ -7,17 +7,16 @@ const DualitySection = () => {
           <div className="relative pb-12 md:pb-0 md:pr-12 lg:pr-16">
             <div className="absolute inset-0 bg-cool-blue/[0.03] rounded-l-2xl pointer-events-none" />
             <div className="relative">
-              <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-4">
+              <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">
                 Seit 1996
               </p>
-              <h2 className="font-serif-display text-4xl md:text-5xl mb-6">
+              <h2 className="font-serif-display text-4xl md:text-5xl mb-6 text-foreground/95">
                 Der Programmierer.
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-foreground/70 leading-relaxed">
                 Erste Website mit 14. Eines der größten TYPO3-Foren Europas
-                aufgebaut. <span className="text-foreground font-medium">3.676 GitHub-Commits, 6 produktionsreife Plattformen
-                mit KI und Vibe Coding gebaut</span> – und ein tiefes Verständnis dafür,
-                was Technologie kann und wo sie an ihre Grenzen stößt.
+                aufgebaut. Seitdem: <span className="text-foreground/95 font-medium">Tausende Zeilen Code, Dutzende Projekte, ein tiefes Verständnis dafür,
+                was Technologie kann</span> – und wo sie an ihre Grenzen stößt.
               </p>
             </div>
           </div>
@@ -26,16 +25,15 @@ const DualitySection = () => {
           <div className="relative pt-12 md:pt-0 md:pl-12 lg:pl-16">
             <div className="absolute inset-0 bg-warm-gold/[0.03] rounded-r-2xl pointer-events-none" />
             <div className="relative">
-              <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-4">
+              <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">
                 Seit 2008
               </p>
-              <h2 className="font-serif-display text-4xl md:text-5xl mb-6">
+              <h2 className="font-serif-display text-4xl md:text-5xl mb-6 text-foreground/95">
                 Der Entertainer.
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                4 Jahre "Tech-Nick" bei Saturn. Schauspieler in Absolute Giganten,
-                Das Experiment, Who Am I. Drehbücher für Netflix und ZDF.{' '}
-                <span className="text-foreground font-medium">Die seltene Fähigkeit, komplexe Dinge so zu erklären, dass
+              <p className="text-foreground/70 leading-relaxed">
+                4 Jahre "Tech-Nick" bei Saturn. Drehbücher für Netflix und ZDF.{' '}
+                <span className="text-foreground/95 font-medium">Die seltene Fähigkeit, komplexe Dinge so zu erklären, dass
                 jeder sie versteht</span> – und am nächsten Tag umsetzt.
               </p>
             </div>
@@ -43,8 +41,8 @@ const DualitySection = () => {
         </div>
 
         {/* Tagline */}
-        <div className="text-center mt-20 reveal">
-          <p className="font-serif-display italic text-3xl md:text-4xl text-primary">
+        <div className="text-center mt-20 py-16 reveal">
+          <p className="font-serif-display italic text-4xl md:text-5xl lg:text-6xl text-primary">
             Technick verbindet.
           </p>
         </div>

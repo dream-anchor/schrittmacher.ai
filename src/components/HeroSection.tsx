@@ -28,7 +28,7 @@ const HeroSection = () => {
         </motion.p>
 
         {/* Headline */}
-        <h1 className="font-serif-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 max-w-4xl">
+        <h1 className="font-serif-display text-foreground/95 leading-[1.05] mb-8 max-w-5xl" style={{ fontSize: 'clamp(3rem, 8vw, 7rem)' }}>
           {words.map((word, i) => {
             if (word.text === '\n') {
               return <br key={i} />;
@@ -40,7 +40,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 + i * 0.07, duration: 0.5 }}
                 className={`inline-block mr-[0.25em] ${
-                  word.accent ? 'italic text-primary' : 'text-foreground'
+                  word.accent ? 'italic text-primary' : ''
                 }`}
               >
                 {word.text}
@@ -54,7 +54,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.6 }}
-          className="text-lg md:text-xl text-muted-foreground font-light max-w-2xl mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-foreground/70 font-light max-w-2xl mb-10 leading-relaxed"
         >
           Workshops, Keynotes und Vibe Coding für Unternehmen,
           die KI nicht nur verstehen, sondern einsetzen wollen. Ab morgen.
@@ -90,16 +90,16 @@ const HeroSection = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl">
             <div>
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground">30 Jahre</p>
-              <p className="font-mono-label text-xs tracking-wider uppercase text-muted-foreground mt-1">Code-Erfahrung</p>
+              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95">30 Jahre</p>
+              <p className="font-mono-label text-xs tracking-wider uppercase text-foreground/35 mt-1">Code-Erfahrung</p>
             </div>
             <div>
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground">82 Mio.</p>
-              <p className="font-mono-label text-xs tracking-wider uppercase text-muted-foreground mt-1">TV-Zuschauer als Tech-Nick</p>
+              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95">82 Mio.</p>
+              <p className="font-mono-label text-xs tracking-wider uppercase text-foreground/35 mt-1">TV-Zuschauer als Tech-Nick</p>
             </div>
             <div>
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground">Netflix</p>
-              <p className="font-mono-label text-xs tracking-wider uppercase text-muted-foreground mt-1">Drehbuchautor</p>
+              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95">Netflix</p>
+              <p className="font-mono-label text-xs tracking-wider uppercase text-foreground/35 mt-1">Drehbuchautor</p>
             </div>
           </div>
         </motion.div>

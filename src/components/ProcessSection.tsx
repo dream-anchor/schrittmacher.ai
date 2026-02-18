@@ -31,10 +31,10 @@ const ProcessSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Intro */}
         <div className="mb-16 reveal">
-          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-muted-foreground mb-4">
+          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">
             So arbeiten wir
           </p>
-          <h2 className="font-serif-display text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="font-serif-display text-4xl md:text-5xl lg:text-6xl text-foreground/95">
             Vier Schritte. Null Bullshit.
           </h2>
         </div>
@@ -49,8 +49,8 @@ const ProcessSection = () => {
               </span>
               <div className="relative">
                 <p className="font-mono-label text-xs text-primary mb-3">{step.num}</p>
-                <h3 className="font-serif-display text-2xl mb-3">{step.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{step.text}</p>
+                <h3 className="font-serif-display text-2xl mb-3 text-foreground/95">{step.title}</h3>
+                <p className="text-foreground/70 text-sm leading-relaxed">{step.text}</p>
                 {step.note && (
                   <p className="text-primary/50 text-sm italic mt-3">{step.note}</p>
                 )}
