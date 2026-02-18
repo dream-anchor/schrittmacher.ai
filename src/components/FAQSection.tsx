@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     q: 'Was kostet ein KI-Workshop?',
-    a: 'Tagesworkshops starten ab 2.500 €. Der genaue Preis hängt von Teamgröße, Ort und Inhalten ab. Im Erstgespräch klären wir das in 30 Minuten.',
+    a: 'Der KI-Kickstart (Halbtag) startet ab 3.500 €, die ganztägige KI-Werkstatt ab 5.000 €, und die zweitägige KI-Transformation ab 9.000 €. Der genaue Preis hängt von Teamgröße, Ort und Inhalten ab. Im Erstgespräch klären wir das in 30 Minuten.',
   },
   {
     q: 'Was ist Vibe Coding?',

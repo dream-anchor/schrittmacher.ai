@@ -2,9 +2,9 @@ const credentials = [
   { year: '1996', title: 'Erster Code geschrieben', detail: 'HTML · PHP · MySQL' },
   { year: '2003', title: 'TYPO3-Forum gegründet', detail: 'Eines der größten in Europa' },
   { year: '2013', title: '"Tech-Nick" bei Saturn', detail: '82 Mio. TV-Zuschauer' },
-  { year: '2018', title: 'Drehbücher für Netflix & ZDF', detail: 'Storytelling trifft Code' },
+  { year: '3.676', title: 'GitHub-Commits', detail: '6 Plattformen live' },
   { year: '2025', title: 'schrittmacher.ai gegründet', detail: 'Mit Stefanie Sick' },
-  { year: '28+', title: 'Jahre Programmiererfahrung', detail: 'Von PHP bis KI' },
+  { year: '30+', title: 'Jahre Programmiererfahrung', detail: 'Von PHP bis KI' },
   { year: '∞', title: 'Kaffee getrunken', detail: 'Minimum 4 pro Tag' },
   { year: '1', title: 'Mission', detail: 'Technick verbindet' },
 ];

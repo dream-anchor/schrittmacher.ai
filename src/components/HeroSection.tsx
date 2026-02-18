@@ -90,7 +90,7 @@ const HeroSection = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl">
             <div>
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground">28 Jahre</p>
+              <p className="font-serif-display text-3xl md:text-4xl text-foreground">30 Jahre</p>
               <p className="font-mono-label text-xs tracking-wider uppercase text-muted-foreground mt-1">Code-Erfahrung</p>
             </div>
             <div>
