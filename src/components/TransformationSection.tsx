@@ -4,20 +4,27 @@ const cards = [
     afterLabel: 'Das Ergebnis',
     afterHeadline: 'Ihre Lösung. Gebaut von jemandem, der Sie versteht.',
     afterText: 'Websites, Web-Apps, interne Tools, Automationen. Maßgeschneidert, kein Template. Von jemandem mit 30 Jahren Erfahrung darin, Kundenbedürfnisse in funktionierende Software zu übersetzen.',
+    afterList: null,
     tag: 'Webentwicklung',
   },
   {
-    before: 'Für jede kleine Änderung an Ihrer Website müssen Sie jemanden anrufen. Jedes Bild, jeder Text, jede Kleinigkeit – Wartezeit, Kosten, Frust.',
+    before: 'Für jede kleine Änderung an Ihrer Website müssen Sie jemanden anrufen. Und Ihr letzter \'KI-Workshop\'? Hat niemand etwas mitgenommen.',
     afterLabel: 'Das Ergebnis',
-    afterHeadline: 'Sie machen es selbst. Ohne Code. Ohne Agentur. Ab morgen.',
-    afterText: 'In einem Tag lernen Sie und Ihr Team, wie Sie mit KI Ihre Website pflegen, Texte schreiben, Bilder erstellen, Prototypen bauen. Am Abend können Sie Dinge, die morgens noch unmöglich schienen.',
-    tag: 'Workshop · Tagesformat',
+    afterHeadline: 'Ein Team, das KI benutzt. Nicht nur darüber geredet hat.',
+    afterText: 'Kein Frontalunterricht. Kein Tod durch PowerPoint. Antoine Monot hat 82 Millionen TV-Zuschauern Technik erklärt – Ihr Team bekommt dieselbe Energie, plus echte Workflows, die am nächsten Tag funktionieren.',
+    afterList: [
+      '"Meine Website, meine Regeln" – selbst pflegen, ohne Code',
+      '"Vom Briefing zum Prototyp" – an einem Tag eine App bauen',
+      '"KI für mein Team" – jeder spart eine Stunde pro Tag',
+    ],
+    tag: 'Workshop',
   },
   {
     before: 'Ihre Konferenz braucht einen Speaker. Aber bitte keinen, bei dem nach 10 Minuten alle aufs Handy schauen.',
     afterLabel: 'Das Ergebnis',
     afterHeadline: 'Ein Publikum, das gesehen hat wie jemand live eine Website baut.',
-    afterText: 'Keine Slides. Keine Theorie. Antoine baut auf der Bühne in Echtzeit – mit KI, vor den Augen des Publikums. Technologie + Entertainment von jemandem, der beides professionell macht.',
+    afterText: 'Keine Slides. Keine Theorie. Antoine baut auf der Bühne in Echtzeit – mit KI, vor den Augen des Publikums. Technologie + Entertainment von jemandem, der beides seit über 20 Jahren professionell macht.',
+    afterList: null,
     tag: 'Keynote · Live-Demo',
   },
 ];
@@ -28,10 +35,10 @@ const TransformationSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Intro */}
         <div className="mb-16 reveal">
-          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">
+          <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/45 mb-4">
             Drei Wege
           </p>
-          <h2 className="font-serif-display text-4xl md:text-5xl lg:text-6xl max-w-2xl leading-[1.1] text-foreground/95">
+          <h2 className="font-serif-display text-4xl md:text-5xl lg:text-6xl max-w-2xl leading-[1.1] text-foreground/93">
             Raus aus der Abhängigkeit.<br />
             Rein in die Umsetzung.
           </h2>
@@ -60,13 +67,22 @@ const TransformationSection = () => {
 
               {/* After */}
               <div className="flex-1">
-                <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-green-400/70 mb-3">{card.afterLabel}</p>
+                <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary/70 mb-3">{card.afterLabel}</p>
                 <p className="font-serif-display text-2xl text-foreground/95 mb-3 leading-snug">
                   "{card.afterHeadline}"
                 </p>
                 <p className="text-foreground/70 text-sm leading-relaxed">
                   {card.afterText}
                 </p>
+                {card.afterList && (
+                  <div className="mt-4 space-y-2">
+                    {card.afterList.map((item, j) => (
+                      <p key={j} className="text-foreground/70 text-sm leading-relaxed">
+                        <span className="text-primary">→</span> {item}
+                      </p>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Tag */}

@@ -24,7 +24,7 @@ const CTASection = () => {
             Gespräch vereinbaren <span aria-hidden="true">→</span>
           </a>
           <a
-            href="tel:+4989909015393"
+            href="tel:+498990901539"
             className="inline-flex items-center gap-2 border border-border text-foreground/80 px-7 py-3.5 rounded-lg font-medium hover:bg-secondary/50 transition-colors"
           >
             Oder direkt anrufen <span aria-hidden="true">→</span>
@@ -34,7 +34,7 @@ const CTASection = () => {
         <div className="border-t border-border/50 pt-8 reveal">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 font-mono-label text-[11px] tracking-wider text-foreground/35">
             <span>✉ hallo@schrittmacher.ai</span>
-            <span>☎ +49 89 909015 3943</span>
+            <span>☎ +49 89 909015 39</span>
             <span>◉ Grünwald bei München</span>
           </div>
         </div>

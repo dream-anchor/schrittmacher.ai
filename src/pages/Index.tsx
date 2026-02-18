@@ -5,7 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import DualitySection from '@/components/DualitySection';
 import WendeSection from '@/components/WendeSection';
 import TransformationSection from '@/components/TransformationSection';
-import KIWerkbank from '@/components/KIWerkbank';
+import ProjectsSection from '@/components/ProjectsSection';
 import CredentialsGrid from '@/components/CredentialsGrid';
 import QuoteSection from '@/components/QuoteSection';
 import ProcessSection from '@/components/ProcessSection';
@@ -84,7 +84,7 @@ const Index = () => {
         <DualitySection />
         <WendeSection />
         <TransformationSection />
-        <KIWerkbank />
+        <ProjectsSection />
         <CredentialsGrid />
         <QuoteSection />
         <ProcessSection />
