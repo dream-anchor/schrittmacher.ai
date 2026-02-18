@@ -4,7 +4,7 @@ const credentials = [
   { year: '2013', title: '"Tech-Nick" bei Saturn', detail: '82 Mio. TV-Zuschauer' },
   { year: '2025', title: 'schrittmacher.ai gegründet', detail: 'Mit Stefanie Sick' },
   { year: '30+', title: 'Jahre Programmiererfahrung', detail: 'Von PHP bis KI' },
-  { year: 'Netflix', title: 'Drehbuchautor', detail: 'Film & Fernsehen' },
+  { year: '2014', title: '"Ein Fall für zwei" (ZDF)', detail: 'Rechtsanwalt Benni Hornberg' },
   { year: '∞', title: 'Kaffee getrunken', detail: 'Minimum 4 pro Tag' },
   { year: '1', title: 'Mission', detail: 'Technick verbindet' },
 ];
