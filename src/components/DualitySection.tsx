@@ -14,10 +14,10 @@ const DualitySection = () => {
                 Der Entwickler.
               </h2>
               <p className="text-foreground/70 leading-relaxed">
-                Erste Website mit 14. Eines der größten TYPO3-Foren Europas
-                aufgebaut. Hunderte Webprojekte. Kunden bis
-                2.000 Mitarbeiter. <span className="text-foreground/95 font-medium">30 Jahre Erfahrung darin, zu verstehen
-                was Unternehmen digital brauchen</span> – und es umzusetzen.
+              Erste Website mit 21. Eines der größten TYPO3-Foren
+              Europas aufgebaut. Viele Webprojekte. Kunden bis
+              2.000 Mitarbeiter. <span className="text-foreground/95 font-medium">30 Jahre Erfahrung darin, zu verstehen
+              was Unternehmen digital brauchen</span> – und es umzusetzen.
               </p>
             </div>
           </div>
@@ -33,9 +33,10 @@ const DualitySection = () => {
                 Der Entertainer.
               </h2>
               <p className="text-foreground/70 leading-relaxed">
-                4 Jahre "Tech-Nick" bei Saturn. Schauspieler in
-                Absolute Giganten, Das Experiment, Who Am I. Über
-                100 Film- und TV-Produktionen.{' '}
+                5 Jahre "Tech-Nick" bei Saturn. Schauspieler in
+                Absolute Giganten, Das Experiment, Who Am I, Ein Fall
+                für zwei, Behringer und die Toten. Über 100 Film- und
+                TV-Produktionen.{' '}
                 <span className="text-foreground/95 font-medium">Die seltene Fähigkeit,
                 komplexe Dinge so zu erklären, dass jeder sie
                 versteht</span> – und am nächsten Tag umsetzt.

@@ -1,12 +1,12 @@
 const credentials = [
-  { year: '1996', title: 'Erste Website gebaut', detail: 'Mit 14 Jahren' },
-  { year: '2003', title: 'TYPO3-Forum gegründet', detail: 'Eines der größten in Europa' },
-  { year: '2013', title: '"Tech-Nick" bei Saturn', detail: '82 Mio. TV-Zuschauer' },
-  { year: '2014', title: '"Ein Fall für zwei" (ZDF)', detail: 'Seit über 10 Jahren' },
-  { year: '2025', title: 'schrittmacher.ai gegründet', detail: 'Mit Stefanie Sick' },
-  { year: '30+', title: 'Jahre Webentwicklung', detail: 'Von HTML bis KI' },
-  { year: '2.500+', title: 'Commits auf GitHub', detail: 'Websites · Apps · Tools' },
-  { year: '1', title: 'Mission', detail: 'Technick verbindet' },
+  { year: '1996', title: 'Erste Website gebaut', detail: 'Mit 21 Jahren', row: 'top' },
+  { year: '2004', title: 'TYPO3-Forum gegründet', detail: 'Eines der größten in Europa', row: 'top' },
+  { year: '2013', title: '"Tech-Nick" bei Saturn', detail: '82 Mio. TV-Zuschauer', row: 'top' },
+  { year: '2014', title: '"Ein Fall für zwei" (ZDF)', detail: 'Seit über 10 Jahren', row: 'top' },
+  { year: '2025', title: 'schrittmacher.ai gegründet', detail: 'Mit Stefanie Sick', row: 'bottom' },
+  { year: '30+', title: 'Jahre Webentwicklung', detail: 'Von HTML bis KI', row: 'bottom' },
+  { year: '2.500+', title: 'Commits auf GitHub', detail: 'Websites · Apps · Tools', row: 'bottom' },
+  { year: '1', title: 'Mission', detail: 'Technick verbindet', row: 'bottom' },
 ];
 
 const CredentialsGrid = () => {
@@ -25,7 +25,9 @@ const CredentialsGrid = () => {
                 i % 2 === 0 ? 'sm:border-r lg:border-r-0' : ''
               } border-border`}
             >
-              <p className="font-serif-display text-3xl md:text-4xl text-foreground/95 mb-2">{item.year}</p>
+              <p className={`font-serif-display text-3xl md:text-4xl mb-2 ${
+                item.row === 'top' ? 'text-foreground/60' : 'text-foreground/90'
+              }`}>{item.year}</p>
               <p className="text-sm text-foreground/70 mb-1">{item.title}</p>
               <p className="font-mono-label text-[9px] tracking-[0.2em] uppercase text-foreground/35">
                 {item.detail}
