@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from 'react';
 
 const chips = [
   'Website selbst pflegen',
-  'Angebote schneller erstellen',
-  'Interne Tools bauen',
+  'Internes Tool bauen',
+  'Angebote automatisieren',
   'Social Media Content',
-  'Dokumente automatisieren',
+  'Dokumente zusammenfassen',
 ];
 
 const KIWerkbank = () => {
@@ -58,8 +58,8 @@ const KIWerkbank = () => {
         <div className="text-center mb-12 reveal">
           <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">Live-Demo</p>
           <h2 className="font-serif-display text-4xl md:text-5xl mb-4 leading-[1.1] text-foreground/95">
-            Beschreiben Sie ein Problem.<br />
-            Wir zeigen, was KI daraus macht.
+            Beschreiben Sie Ihr Problem.<br />
+            Wir zeigen, was möglich ist.
           </h2>
           <p className="text-foreground/70">
             Keine Anmeldung. Kein Verkaufsgespräch. Einfach tippen.
@@ -86,7 +86,7 @@ const KIWerkbank = () => {
               onChange={(e) => { setInput(e.target.value); setShowResult(false); }}
               onFocus={() => setFocused(true)}
               onBlur={() => setFocused(false)}
-              placeholder={'Was kostet Sie gerade am meisten Zeit? Zum Beispiel:\n"Unsere Website-Agentur braucht 2 Wochen für jede Textänderung."'}
+              placeholder={'Woran scheitern Sie gerade? Zum Beispiel:\n\'Unsere Agentur braucht 2 Wochen für jede Textänderung auf der Website.\''}
               className="w-full bg-secondary/70 border border-border rounded-lg p-4 text-sm text-foreground placeholder:text-foreground/40 resize-none focus:outline-none focus:ring-2 focus:ring-primary/30 transition-shadow min-h-[100px]"
             />
 
@@ -133,15 +133,15 @@ const KIWerkbank = () => {
                 <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Lösung</p>
                 <p className="font-medium text-foreground/95 mb-1">KI-gestütztes Website-Management</p>
                 <p className="text-sm text-foreground/70">
-                  Ein System bei dem Sie Texte, Bilder und Inhalte Ihrer Website
-                  selbst ändern können – per natürlicher Sprache, ohne Code,
-                  ohne Ihre Agentur anrufen zu müssen.
+                  Ein System bei dem Sie Texte, Bilder und Inhalte
+                  selbst ändern – per natürlicher Sprache, ohne Code,
+                  ohne auf Ihre Agentur zu warten.
                 </p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-5 border border-border">
-                <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Quick Win</p>
+                <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-primary mb-2">Weg dahin</p>
                 <p className="text-sm text-foreground/70">Timeline: <span className="text-foreground/95 font-medium">Workshop: 1 Tag · Umsetzung: 1–2 Wochen</span></p>
-                <p className="text-sm text-foreground/70">Empfohlener Einstieg: <span className="text-foreground/95 font-medium">Tagesworkshop</span></p>
+                <p className="text-sm text-foreground/70">Empfehlung: <span className="text-foreground/95 font-medium">Tagesworkshop + Umsetzungsbegleitung</span></p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-5 border border-border grid grid-cols-2 gap-6">
                 <div>
@@ -157,7 +157,7 @@ const KIWerkbank = () => {
                 href="mailto:hallo@schrittmacher.ai"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors w-full justify-center"
               >
-                Projekt anfragen →
+                Gespräch vereinbaren →
               </a>
             </div>
           )}

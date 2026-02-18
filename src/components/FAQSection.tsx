@@ -7,20 +7,16 @@ import {
 
 const faqs = [
   {
-    q: 'Was kostet eine Website?',
-    a: 'Jedes Projekt ist anders – Umfang, Funktionen, CMS-Anforderungen. Im kostenlosen Erstgespräch klären wir in 30 Minuten, was sinnvoll ist und was es kostet. Keine versteckten Kosten, keine Überraschungen.',
-  },
-  {
     q: 'Was genau baut ihr?',
-    a: 'Websites, Web-Apps, interne Tools, Automationen. Alles was im Browser läuft. Auf modernem Stack: React, TypeScript, Supabase, Cloudflare. Maßgeschneidert, kein Template von der Stange.',
+    a: 'Websites, Web-Apps, interne Tools, Automationen – alles was im Browser läuft. Auf modernem Stack: React, TypeScript, Supabase, Cloudflare. Maßgeschneidert, kein Template von der Stange. Von der Restaurant-Website bis zum internen Management-System.',
   },
   {
     q: 'Was ist der Unterschied zu einer klassischen Agentur?',
-    a: 'Geschwindigkeit und Direktheit. Keine Projektmanager, keine Zwischenebenen. Sie reden direkt mit dem, der baut. Und weil wir KI als Werkzeug nutzen, sind wir 10-50 Mal schneller als ein klassisches Entwicklerteam.',
+    a: 'Direktheit und Erfahrung. Keine Projektmanager, keine Zwischenebenen. Sie reden mit dem, der baut – und der seit 30 Jahren versteht, was Unternehmen brauchen. Dazu nutzen wir KI als Werkzeug, was uns deutlich schneller macht als klassische Teams.',
   },
   {
     q: 'Was lernt man im Workshop?',
-    a: 'Hängt davon ab was Sie brauchen. "Meine Website, meine Regeln" – Sie lernen Ihre Website selbst zu pflegen, ohne Code. "Vom Briefing zum Prototyp" – Sie bauen an einem Tag eine funktionierende App. "KI für mein Team" – Ihr Team spart ab morgen eine Stunde pro Tag.',
+    a: 'Das hängt davon ab, was Sie brauchen. "Meine Website, meine Regeln" – Sie lernen Ihre Website selbst zu pflegen, ohne Code, ohne Agentur. "Vom Briefing zum Prototyp" – Sie bauen an einem Tag eine funktionierende App mit KI. "KI für mein Team" – Jeder im Team spart ab morgen mindestens eine Stunde pro Tag.',
   },
   {
     q: 'Brauche ich technisches Vorwissen?',
@@ -28,7 +24,11 @@ const faqs = [
   },
   {
     q: 'Nur in München?',
-    a: 'Webentwicklung läuft komplett remote. Workshops und Keynotes: deutschlandweit. Für Keynotes auch international.',
+    a: 'Webentwicklung läuft komplett remote. Workshops und Keynotes deutschlandweit.',
+  },
+  {
+    q: 'Was kostet das?',
+    a: 'Jedes Projekt ist anders. Im kostenlosen Erstgespräch klären wir in 30 Minuten, was sinnvoll ist und was es kostet. Keine versteckten Kosten, keine Überraschungen.',
   },
 ];
 

@@ -1,21 +1,21 @@
 const cards = [
   {
-    before: 'Sie brauchen eine neue Website. Oder eine Web-App. Oder ein internes Tool. Ihre Agentur sagt: Drei Monate Wartezeit. 40.000 Euro. Vielleicht mehr.',
-    afterLabel: 'Nach 2–4 Wochen',
-    afterHeadline: 'Eine maßgeschneiderte Lösung. Echte Software, die läuft.',
-    afterText: 'Wir bauen mit KI – und mit 30 Jahren Erfahrung darin, was Unternehmen wirklich brauchen. Keine Templates. Keine Kompromisse. Ihr Projekt, Ihr CMS, Ihre Regeln.',
+    before: 'Sie brauchen eine Website, ein Tool, eine Lösung. Aber Ihre Agentur ist zu langsam, zu teuer, oder versteht nicht was Sie meinen.',
+    afterLabel: 'Das Ergebnis',
+    afterHeadline: 'Ihre Lösung. Gebaut von jemandem, der Sie versteht.',
+    afterText: 'Websites, Web-Apps, interne Tools, Automationen. Maßgeschneidert, kein Template. Von jemandem mit 30 Jahren Erfahrung darin, Kundenbedürfnisse in funktionierende Software zu übersetzen.',
     tag: 'Webentwicklung',
   },
   {
-    before: 'Für jede kleine Änderung an Ihrer Website rufen Sie die Agentur an. Jedes neue Bild, jeder Text, jede Kleinigkeit – Wartezeit, Kosten, Abhängigkeit.',
-    afterLabel: 'Nach einem Tag',
-    afterHeadline: 'Ihr Team macht es selbst. Ohne Code. Ohne Agentur.',
-    afterText: 'KI-Tools für Texte, Bilder, SEO, einfache Web-Änderungen. Am Abend kann jeder Teilnehmer Dinge, die morgens noch unmöglich schienen.',
+    before: 'Für jede kleine Änderung an Ihrer Website müssen Sie jemanden anrufen. Jedes Bild, jeder Text, jede Kleinigkeit – Wartezeit, Kosten, Frust.',
+    afterLabel: 'Das Ergebnis',
+    afterHeadline: 'Sie machen es selbst. Ohne Code. Ohne Agentur. Ab morgen.',
+    afterText: 'In einem Tag lernen Sie und Ihr Team, wie Sie mit KI Ihre Website pflegen, Texte schreiben, Bilder erstellen, Prototypen bauen. Am Abend können Sie Dinge, die morgens noch unmöglich schienen.',
     tag: 'Workshop · Tagesformat',
   },
   {
-    before: 'Ihre Konferenz braucht einen KI-Speaker. Aber bitte keinen, bei dem nach 10 Minuten alle aufs Handy schauen.',
-    afterLabel: 'Nach 60 Minuten',
+    before: 'Ihre Konferenz braucht einen Speaker. Aber bitte keinen, bei dem nach 10 Minuten alle aufs Handy schauen.',
+    afterLabel: 'Das Ergebnis',
     afterHeadline: 'Ein Publikum, das gesehen hat wie jemand live eine Website baut.',
     afterText: 'Keine Slides. Keine Theorie. Antoine baut auf der Bühne in Echtzeit – mit KI, vor den Augen des Publikums. Technologie + Entertainment von jemandem, der beides professionell macht.',
     tag: 'Keynote · Live-Demo',
@@ -29,11 +29,11 @@ const TransformationSection = () => {
         {/* Intro */}
         <div className="mb-16 reveal">
           <p className="font-mono-label text-[10px] tracking-[0.25em] uppercase text-foreground/35 mb-4">
-            Was passiert, wenn wir kommen
+            Drei Wege
           </p>
           <h2 className="font-serif-display text-4xl md:text-5xl lg:text-6xl max-w-2xl leading-[1.1] text-foreground/95">
-            Nicht was wir anbieten.<br />
-            Was sich bei Ihnen ändert.
+            Raus aus der Abhängigkeit.<br />
+            Rein in die Umsetzung.
           </h2>
         </div>
 

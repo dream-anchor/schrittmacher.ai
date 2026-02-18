@@ -1,26 +1,26 @@
 const steps = [
   {
     num: '01',
-    title: 'Erstgespräch',
-    text: '30 Minuten. Sie erzählen, was Sie brauchen. Wir sagen ehrlich, ob und wie wir helfen können.',
+    title: 'Zuhören',
+    text: 'Sie erzählen, wo es klemmt. 30 Minuten. Wir sagen ehrlich, ob und wie wir helfen können.',
     note: 'Kein Buzzword-Bingo, versprochen.',
   },
   {
     num: '02',
-    title: 'Analyse',
+    title: 'Verstehen',
     text: 'Wir schauen uns an, was da ist und was fehlt. Ein Plan auf einer Seite. Kein 80-Folien-Deck.',
     note: null,
   },
   {
     num: '03',
-    title: 'Umsetzung',
-    text: 'Website in 2–4 Wochen. Workshop am selben Tag. Wir bauen. Sie sehen jeden Tag Fortschritt.',
+    title: 'Bauen',
+    text: 'Website, Tool, Workshop – was auch immer Sie brauchen. Sie sehen jeden Tag Fortschritt. Keine Black Box.',
     note: 'Ergebnisse, nicht Folien.',
   },
   {
     num: '04',
-    title: 'Betreuung',
-    text: 'Wir verschwinden nicht nach dem Launch. Updates, Erweiterungen, Fragen – wir sind da.',
+    title: 'Dranbleiben',
+    text: 'Wir verschwinden nicht nach dem Launch. Updates, Erweiterungen, neue Ideen – wir sind da.',
     note: null,
   },
 ];

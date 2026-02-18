@@ -3,6 +3,7 @@ import { useScrollReveal } from '@/hooks/useScrollReveal';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import DualitySection from '@/components/DualitySection';
+import WendeSection from '@/components/WendeSection';
 import TransformationSection from '@/components/TransformationSection';
 import KIWerkbank from '@/components/KIWerkbank';
 import CredentialsGrid from '@/components/CredentialsGrid';
@@ -24,7 +25,6 @@ const Index = () => {
     const updateAtmosphere = () => {
       if (!atmosphereRef.current) return;
       const scrollPct = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight), 1);
-      // Cool blue at top → warm gold at bottom
       const coolOpacity = (1 - scrollPct) * 0.06;
       const warmOpacity = scrollPct * 0.08;
       atmosphereRef.current.style.background = `
@@ -82,6 +82,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <DualitySection />
+        <WendeSection />
         <TransformationSection />
         <KIWerkbank />
         <CredentialsGrid />
