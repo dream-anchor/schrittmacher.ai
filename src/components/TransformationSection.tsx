@@ -1,24 +1,24 @@
 const cards = [
   {
-    before: 'Ihr Team redet seit Monaten über KI. Alle haben ChatGPT ausprobiert. Aber niemand weiß, wo man wirklich anfangen soll.',
+    before: 'Sie brauchen eine neue Website. Oder eine Web-App. Oder ein internes Tool. Ihre Agentur sagt: Drei Monate Wartezeit. 40.000 Euro. Vielleicht mehr.',
+    afterLabel: 'Nach 2–4 Wochen',
+    afterHeadline: 'Eine maßgeschneiderte Lösung. Echte Software, die läuft.',
+    afterText: 'Wir bauen mit KI – und mit 30 Jahren Erfahrung darin, was Unternehmen wirklich brauchen. Keine Templates. Keine Kompromisse. Ihr Projekt, Ihr CMS, Ihre Regeln.',
+    tag: 'Webentwicklung',
+  },
+  {
+    before: 'Für jede kleine Änderung an Ihrer Website rufen Sie die Agentur an. Jedes neue Bild, jeder Text, jede Kleinigkeit – Wartezeit, Kosten, Abhängigkeit.',
     afterLabel: 'Nach einem Tag',
-    afterHeadline: 'Jeder im Team hat 3 KI-Tools im Alltag.',
-    afterText: 'Kein theoretisches Gelaber. Am Abend gehen alle nach Hause und machen Dinge, die sie morgens noch nicht konnten.',
+    afterHeadline: 'Ihr Team macht es selbst. Ohne Code. Ohne Agentur.',
+    afterText: 'KI-Tools für Texte, Bilder, SEO, einfache Web-Änderungen. Am Abend kann jeder Teilnehmer Dinge, die morgens noch unmöglich schienen.',
     tag: 'Workshop · Tagesformat',
   },
   {
     before: 'Ihre Konferenz braucht einen KI-Speaker. Aber bitte keinen, bei dem nach 10 Minuten alle aufs Handy schauen.',
-    afterLabel: 'Nach einer Keynote',
-    afterHeadline: 'Ein Publikum, das nicht nur klatscht – sondern handelt.',
-    afterText: 'Technologie + Entertainment von jemandem, der beides professionell macht. Kein Zufall. Kein Risiko.',
-    tag: 'Keynote · Events & Konferenzen',
-  },
-  {
-    before: 'Sie brauchen ein internes Tool, eine Automation, einen Prototypen. Ihre Agentur sagt: 6 Monate, 80.000 Euro.',
-    afterLabel: 'Nach 1–2 Wochen',
-    afterHeadline: 'Ein funktionierender Prototyp. Echte Software.',
-    afterText: 'Vibe Coding: Wir beschreiben der KI, was wir brauchen – und bauen es. Kein PowerPoint. Code, der läuft.',
-    tag: 'Vibe Coding · 1–2 Wochen',
+    afterLabel: 'Nach 60 Minuten',
+    afterHeadline: 'Ein Publikum, das gesehen hat wie jemand live eine Website baut.',
+    afterText: 'Keine Slides. Keine Theorie. Antoine baut auf der Bühne in Echtzeit – mit KI, vor den Augen des Publikums. Technologie + Entertainment von jemandem, der beides professionell macht.',
+    tag: 'Keynote · Live-Demo',
   },
 ];
 
@@ -61,7 +61,7 @@ const TransformationSection = () => {
               {/* After */}
               <div className="flex-1">
                 <p className="font-mono-label text-[10px] tracking-[0.2em] uppercase text-green-400/70 mb-3">{card.afterLabel}</p>
-                <p className="font-serif-display text-2xl md:text-2xl text-foreground/95 mb-3 leading-snug">
+                <p className="font-serif-display text-2xl text-foreground/95 mb-3 leading-snug">
                   "{card.afterHeadline}"
                 </p>
                 <p className="text-foreground/70 text-sm leading-relaxed">

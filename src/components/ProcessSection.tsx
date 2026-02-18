@@ -2,25 +2,25 @@ const steps = [
   {
     num: '01',
     title: 'Erstgespräch',
-    text: '30 Minuten. Kaffee optional. Sie erzählen, wo es klemmt. Wir sagen ehrlich, ob KI helfen kann.',
+    text: '30 Minuten. Sie erzählen, was Sie brauchen. Wir sagen ehrlich, ob und wie wir helfen können.',
     note: 'Kein Buzzword-Bingo, versprochen.',
   },
   {
     num: '02',
     title: 'Analyse',
-    text: 'Wir finden die Stellen, an denen KI den größten Hebel hat. Ein Plan auf einer Seite, keine 80-Folien-Präsentation.',
+    text: 'Wir schauen uns an, was da ist und was fehlt. Ein Plan auf einer Seite. Kein 80-Folien-Deck.',
     note: null,
   },
   {
     num: '03',
     title: 'Umsetzung',
-    text: 'Workshop am selben Tag. Prototyp in 1–2 Wochen. Wir sind Macher, keine Berater die Berater beraten.',
+    text: 'Website in 2–4 Wochen. Workshop am selben Tag. Wir bauen. Sie sehen jeden Tag Fortschritt.',
     note: 'Ergebnisse, nicht Folien.',
   },
   {
     num: '04',
-    title: 'Nachbetreuung',
-    text: 'Wir ghosten nicht. Wir messen den Impact, optimieren was nötig ist und helfen beim nächsten Schritt.',
+    title: 'Betreuung',
+    text: 'Wir verschwinden nicht nach dem Launch. Updates, Erweiterungen, Fragen – wir sind da.',
     note: null,
   },
 ];

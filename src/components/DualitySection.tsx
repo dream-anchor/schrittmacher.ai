@@ -3,7 +3,7 @@ const DualitySection = () => {
     <section className="relative py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border reveal">
-          {/* Programmer */}
+          {/* Entwickler */}
           <div className="relative pb-12 md:pb-0 md:pr-12 lg:pr-16">
             <div className="absolute inset-0 bg-cool-blue/[0.03] rounded-l-2xl pointer-events-none" />
             <div className="relative">
@@ -11,12 +11,12 @@ const DualitySection = () => {
                 Seit 1996
               </p>
               <h2 className="font-serif-display text-4xl md:text-5xl mb-6 text-foreground/95">
-                Der Programmierer.
+                Der Entwickler.
               </h2>
               <p className="text-foreground/70 leading-relaxed">
                 Erste Website mit 14. Eines der größten TYPO3-Foren Europas
-                aufgebaut. Seitdem: <span className="text-foreground/95 font-medium">Tausende Zeilen Code, Dutzende Projekte, ein tiefes Verständnis dafür,
-                was Technologie kann</span> – und wo sie an ihre Grenzen stößt.
+                aufgebaut. Seitdem: <span className="text-foreground/95 font-medium">Hunderte Webprojekte, Kunden bis 2.000 Mitarbeiter, ein tiefes Verständnis dafür,
+                was Unternehmen digital brauchen</span> – und was nicht.
               </p>
             </div>
           </div>
