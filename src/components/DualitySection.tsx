@@ -1,6 +1,6 @@
 const DualitySection = () => {
   return (
-    <section className="relative py-24 md:py-32">
+    <section id="duality" className="relative py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border reveal">
           {/* Entwickler */}
@@ -15,8 +15,9 @@ const DualitySection = () => {
               </h2>
               <p className="text-foreground/70 leading-relaxed">
                 Erste Website mit 14. Eines der größten TYPO3-Foren Europas
-                aufgebaut. Seitdem: <span className="text-foreground/95 font-medium">Hunderte Webprojekte, Kunden bis 2.000 Mitarbeiter, ein tiefes Verständnis dafür,
-                was Unternehmen digital brauchen</span> – und was nicht.
+                aufgebaut. Hunderte Webprojekte. Kunden bis
+                2.000 Mitarbeiter. <span className="text-foreground/95 font-medium">30 Jahre Erfahrung darin, zu verstehen
+                was Unternehmen digital brauchen</span> – und es umzusetzen.
               </p>
             </div>
           </div>
@@ -32,17 +33,19 @@ const DualitySection = () => {
                 Der Entertainer.
               </h2>
               <p className="text-foreground/70 leading-relaxed">
-                4 Jahre "Tech-Nick" bei Saturn. Schauspieler in Absolute Giganten,
-                Das Experiment, Who Am I. Über 100 Film- und TV-Produktionen.{' '}
-                <span className="text-foreground/95 font-medium">Die seltene Fähigkeit, komplexe Dinge so zu erklären, dass
-                jeder sie versteht</span> – und am nächsten Tag umsetzt.
+                4 Jahre "Tech-Nick" bei Saturn. Schauspieler in
+                Absolute Giganten, Das Experiment, Who Am I. Über
+                100 Film- und TV-Produktionen.{' '}
+                <span className="text-foreground/95 font-medium">Die seltene Fähigkeit,
+                komplexe Dinge so zu erklären, dass jeder sie
+                versteht</span> – und am nächsten Tag umsetzt.
               </p>
             </div>
           </div>
         </div>
 
         {/* Tagline */}
-        <div className="text-center mt-20 py-16 reveal">
+        <div className="text-center mt-20 py-20 reveal">
           <p className="font-serif-display italic text-4xl md:text-5xl lg:text-6xl text-primary">
             Technick verbindet.
           </p>

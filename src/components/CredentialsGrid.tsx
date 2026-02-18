@@ -2,7 +2,7 @@ const credentials = [
   { year: '1996', title: 'Erste Website gebaut', detail: 'Mit 14 Jahren' },
   { year: '2003', title: 'TYPO3-Forum gegründet', detail: 'Eines der größten in Europa' },
   { year: '2013', title: '"Tech-Nick" bei Saturn', detail: '82 Mio. TV-Zuschauer' },
-  { year: '2014', title: '"Ein Fall für zwei" (ZDF)', detail: 'Rechtsanwalt Benni Hornberg' },
+  { year: '2014', title: '"Ein Fall für zwei" (ZDF)', detail: 'Seit über 10 Jahren' },
   { year: '2025', title: 'schrittmacher.ai gegründet', detail: 'Mit Stefanie Sick' },
   { year: '30+', title: 'Jahre Webentwicklung', detail: 'Von HTML bis KI' },
   { year: '2.500+', title: 'Commits auf GitHub', detail: 'Websites · Apps · Tools' },

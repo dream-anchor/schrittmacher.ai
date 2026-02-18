@@ -21,7 +21,7 @@ const CTASection = () => {
             href="mailto:hallo@schrittmacher.ai"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3.5 rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
-            Projekt anfragen <span aria-hidden="true">→</span>
+            Gespräch vereinbaren <span aria-hidden="true">→</span>
           </a>
           <a
             href="tel:+4989909015393"

@@ -22,7 +22,7 @@ const HeroSection = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="inline-block mr-[0.25em]"
           >
-            Ihre
+            Sie
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -30,32 +30,32 @@ const HeroSection = () => {
             transition={{ delay: 0.37, duration: 0.5 }}
             className="inline-block mr-[0.25em]"
           >
-            Agentur
+            warten.
           </motion.span>
+          <br />
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.44, duration: 0.5 }}
             className="inline-block mr-[0.25em]"
           >
-            braucht
+            Auf
           </motion.span>
-          <br />
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.51, duration: 0.5 }}
             className="inline-block mr-[0.25em]"
           >
-            drei
+            Ihre
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.58, duration: 0.5 }}
-            className="inline-block mr-[0.25em]"
+            className="inline-block"
           >
-            Monate.
+            Agentur.
           </motion.span>
           <br />
           <motion.span
@@ -64,15 +64,32 @@ const HeroSection = () => {
             transition={{ delay: 0.65, duration: 0.5 }}
             className="inline-block mr-[0.25em]"
           >
-            Wir
+            Auf
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.72, duration: 0.5 }}
+            className="inline-block"
+          >
+            Ihren
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.79, duration: 0.5 }}
+            className="inline-block"
+          >
+            Entwickler.
+          </motion.span>
+          <br />
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.86, duration: 0.5 }}
             className="inline-block mr-[0.25em] italic text-primary"
           >
-            drei Wochen.
+            Auf irgendwen.
           </motion.span>
         </h1>
 
@@ -83,8 +100,8 @@ const HeroSection = () => {
           transition={{ delay: 1.2, duration: 0.6 }}
           className="text-lg md:text-xl text-foreground/70 font-light max-w-2xl mb-10 leading-relaxed"
         >
-          Websites, Web-Apps und maßgeschneiderte Lösungen –
-          gebaut mit KI. 10x schneller. Und wir zeigen Ihnen, wie.
+          Wir bauen Websites, Web-Apps und digitale Lösungen mit KI.
+          Und wir zeigen Ihnen, wie Sie es selbst können.
         </motion.p>
 
         {/* Buttons */}
@@ -98,13 +115,13 @@ const HeroSection = () => {
             href="mailto:hallo@schrittmacher.ai"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3.5 rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
-            Projekt anfragen <span aria-hidden="true">→</span>
+            Gespräch vereinbaren <span aria-hidden="true">→</span>
           </a>
           <a
-            href="#transformation"
+            href="#duality"
             className="inline-flex items-center gap-2 border border-border text-foreground/80 px-7 py-3.5 rounded-lg font-medium hover:bg-secondary/50 transition-colors"
           >
-            Was heißt das konkret? <span aria-hidden="true">↓</span>
+            Unsere Geschichte <span aria-hidden="true">↓</span>
           </a>
         </motion.div>
 
